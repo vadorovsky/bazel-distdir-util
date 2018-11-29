@@ -99,6 +99,15 @@ Source36: https://github.com/prometheus/client_model/archive/99fa1f4be8e564e8a6b
 Source37: https://github.com/census-instrumentation/opencensus-proto/archive/ab82e5fdec8267dc2a726544b10af97675970847.tar.gz
 ```
 
+To easily fetch all tarballs, i.e. in your OBS package directory, you can do:
+
+```
+for tarball in $(cd ~/repos/envoy && bazel-distdir-util); do wget $tarball; done
+```
+
+where `~/repos/envoy` should be replaced with the path to the git repository
+with project you want to package.
+
 ## TODO
 
 Features which will be implemented soon:
