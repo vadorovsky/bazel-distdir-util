@@ -23,7 +23,7 @@ from bazel_distdir_util import parser
 def print_urls(urls, rpm_format=False):
     for no, url in enumerate(urls):
         if rpm_format:
-            url = "Source{}: {}".format(no, url)
+            url = "Source{}: {}".format(no + 1, url)
         print(url)
 
 
