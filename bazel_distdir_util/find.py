@@ -26,4 +26,4 @@ def find_files(pattern):
 
 
 def find_bzl_files():
-    return find_files("*.bzl")
+    return find_files("*.bzl") + find_files("WORKSPACE")
